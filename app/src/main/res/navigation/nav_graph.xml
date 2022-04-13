@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/generalFragment">
+
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.example.appberita.fragments.HealthFragment"
+        android:label="HealthFragment" />
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="com.example.appberita.fragments.BusinessFragment"
+        android:label="BusinessFragment" >
+        <action
+            android:id="@+id/action_businessFragment_to_healthFragment"
+            app:destination="@id/healthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.example.appberita.fragments.GeneralFragment"
+        android:label="GeneralFragment" >
+        <action
+            android:id="@+id/action_generalFragment_to_businessFragment"
+            app:destination="@id/businessFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_healthFragment"
+            app:destination="@id/healthFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_entertainmentFragment"
+            app:destination="@id/entertainmentFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_scienceFragment"
+            app:destination="@id/scienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="com.example.appberita.fragments.EntertainmentFragment"
+        android:label="EntertainmentFragment" />
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.example.appberita.fragments.ScienceFragment"
+        android:label="ScienceFragment" />
+    <fragment
+        android:id="@+id/sportFragment"
+        android:name="com.example.appberita.fragments.SportFragment"
+        android:label="SportFragment" />
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.example.appberita.fragments.TechnologyFragment"
+        android:label="TechnologyFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.appberita.fragments.SearchFragment"
+        android:label="search_blank"
+        tools:layout="@layout/fragment_search" />
+</navigation>

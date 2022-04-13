@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/general"
+            android:title="General"
+            android:icon="@drawable/ic_language"/>
+        <item android:id="@+id/business"
+            android:title="Business"
+            android:icon="@drawable/ic_business"/>
+        <item android:id="@+id/health"
+            android:title="Health"
+            android:icon="@drawable/ic_masks"/>
+        <item android:id="@+id/science"
+            android:title="Science"
+            android:icon="@drawable/ic_nature"/>
+        <item android:id="@+id/sport"
+            android:title="Sport"
+            android:icon="@drawable/ic_sports"/>
+        <item android:id="@+id/technology"
+            android:title="Technology"
+            android:icon="@drawable/ic_laptop"/>
+        <item android:id="@+id/entertainment"
+            android:title="Entertaiment"
+            android:icon="@drawable/ic_live"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/note"
+            android:title="Notepad"
+            android:icon="@drawable/ic_bookmark"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout Akun"
+            android:icon="@drawable/ic_exit"/>
+    </group>
+
+</menu>
