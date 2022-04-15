@@ -21,7 +21,9 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="93dp"
-                android:src="@drawable/news" />
+                android:src="@drawable/news"
+                android:contentDescription="logo"
+                tools:ignore="HardcodedText" />
 
         </FrameLayout>
 
@@ -49,7 +51,8 @@
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
                 android:textCursorDrawable="@drawable/cursor_color"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:autofillHints="email" />
 
             <!-- ICON -->
             <ImageView
@@ -58,7 +61,9 @@
                 android:layout_height="10.3dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="17dp"
-                android:src="@drawable/email" />
+                android:src="@drawable/email"
+                android:contentDescription="iconEmail"
+                tools:ignore="HardcodedText" />
 
         </RelativeLayout>
 
@@ -87,7 +92,8 @@
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
                 android:textCursorDrawable="@drawable/cursor_color"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:autofillHints="password" />
 
             <!-- ICON -->
             <ImageView
@@ -96,7 +102,9 @@
                 android:layout_height="10.3dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="17dp"
-                android:src="@drawable/password" />
+                android:src="@drawable/password"
+                android:contentDescription="iconPassword"
+                tools:ignore="HardcodedText" />
 
         </RelativeLayout>
 
@@ -183,10 +191,10 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="26.7dp"
-                android:layout_height="26.7dp"
-                android:src="@drawable/fb" />
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_google"/>
 
         </LinearLayout>
 

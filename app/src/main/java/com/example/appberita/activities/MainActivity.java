@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,9 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.example.appberita.R;
 import com.example.appberita.activities.login.LoginActivity;
 import com.example.appberita.fragments.SearchFragment;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -34,8 +38,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final String TOOLBAR_TITLE="toolbar_title";
     private NavController navController;
     private SearchView searchView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 (NavHostFragment) getSupportFragmentManager()
                         .findFragmentById(R.id.nav_host_fragment);
         navController = navHostFragment.getNavController();
+
 
     }
 

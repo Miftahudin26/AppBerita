@@ -17,4 +17,6 @@
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="sudah_punya_akun">Sudah punya akun?</string>
     <string name="login">Login</string>
+
+<!--    <string name="default_web_client_id">652247948109-0esr6g63sor6i0kl1u9ivd077md2cd5g.apps.googleusercontent.com</string>-->
 </resources>
